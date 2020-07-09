@@ -10,6 +10,7 @@ import numpy as np
 import tensorflow as tf
 from tensorflow.keras.models import load_model
 from tensorflow.keras.preprocessing import image
+from tensorflow.keras.models import model_from_json
 
 # Flask utils
 from flask import Flask, redirect, url_for, request, render_template
@@ -23,8 +24,14 @@ app = Flask(__name__)
 MODEL_PATH = 'best_model.h5'
 dance=["Bharatnatyam","Kathak","Kathakali","Kuchipudi","Manipuri","Mohiniyattam","Odissi","Sattriya"]
 # Load your trained model
-model = load_model(MODEL_PATH)
-model._make_predict_function()     
+#model = load_model(MODEL_PATH)
+#model._make_predict_function()  
+
+json_file = open('model.json', 'r')
+loaded_model_json = json_file.read()
+json_file.close()
+model = model_from_json(loaded_model_json)
+   
 print('Model loaded. Check http://127.0.0.1:5000/')
 
 
