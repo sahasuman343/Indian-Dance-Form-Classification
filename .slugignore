@@ -1,0 +1,5 @@
+data_cleaning.py
+image_seperation.py
+train.csv
+test.csv
+model.py
