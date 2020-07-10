@@ -19,6 +19,8 @@ The eight categories of Indian classical dance are as follows:
 - Sattriya
 - Kuchipudi
 - Mohiniyattam
+
+
 ## Goal:
 Through this project we want to detect Indian Classical Dance forms by looking at an image.
 
