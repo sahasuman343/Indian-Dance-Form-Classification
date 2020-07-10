@@ -24,13 +24,13 @@ app = Flask(__name__)
 MODEL_PATH = 'best_model.h5'
 dance=["Bharatnatyam","Kathak","Kathakali","Kuchipudi","Manipuri","Mohiniyattam","Odissi","Sattriya"]
 # Load your trained model
-#model = load_model(MODEL_PATH)
-#model._make_predict_function()  
-
-json_file = open('model.json', 'r')
+model = load_model(MODEL_PATH)
+model._make_predict_function()  
+'''
+json_file = open('best_model.json', 'r')
 loaded_model_json = json_file.read()
 json_file.close()
-model = model_from_json(loaded_model_json)
+model = model_from_json(loaded_model_json)'''
    
 print('Model loaded. Check http://127.0.0.1:5000/')
 
