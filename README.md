@@ -29,7 +29,7 @@ clone the repository first.
 ```console
 git clone https://github.com/sahasuman343/Indian-Dance-Form-Classification
 ```
-For a quick look without going deep into the model go to command propmt/Anaconda prompt
+For a quick look without going deep into the model go to command prompt/Anaconda prompt
 
 ```console
 cd "folder containing the downloaded files"
